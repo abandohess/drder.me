@@ -2,6 +2,8 @@
 
 Anders Bando-Hess - April 2018
 
+[Link to landing page](drder.me)
+
 I modeled my landing page after the example in the assignment.
 ![](img/main-page.png)
 
