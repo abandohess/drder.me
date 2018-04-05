@@ -1,0 +1,22 @@
+{
+  "axa": {
+    "name": "Alpha Chi Alpha",
+    "img": "img/axa.jpg"
+  },
+  "psiu": {
+    "name": "Psi Upsilon",
+    "img": "img/psiu.jpg"
+  },
+  "beta": {
+    "name": "Beta Alpha Omega",
+    "img": "img/beta.jpg"
+  },
+  "heorot": {
+    "name": "Chi Heorot",
+    "img": "img/heorot.jpg"
+  },
+  "gdx": {
+    "name": "Gamma Delta Chi",
+    "img": "img/psiu.jpg"
+  }
+}
