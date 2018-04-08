@@ -1,0 +1,101 @@
+body {
+  font-family: Raleway,sans-serif;
+  margin: 0;
+  background: #ecf0f1;
+  overflow-x: hidden;
+}
+
+#banner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(img/header.jpg);
+  width: 100%;
+  height: 200px;
+}
+
+#centerText {
+  margin-top: -10px;
+  font-size: 2.7em;
+  color: #ecf0f1;
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.quiz-row {
+  display: flex;
+  /* align-items: space-around; */
+  justify-content: space-around;
+}
+
+.question {
+  font-size: 2.3em;
+  margin-top: 40px !important;
+}
+
+.quiz-item {
+  margin: 40px;
+  position: relative;
+}
+
+.check {
+  width: 140px;
+  position: absolute;
+  left: 75px;
+  top: 100px;
+  z-index: 1;
+  opacity: 0;
+}
+
+label {
+  opacity: 1;
+  transition: .3s;
+}
+
+label:hover {
+  cursor: pointer;
+  opacity: .4;
+}
+
+.fade-in {
+    opacity: 1;
+    animation: fadeIn .7s linear;
+}
+
+.fade-out {
+  opacity: 0;
+  animation: fadeOut .7s linear;
+}
+
+.modal-body {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+}
+
+#modal-text {
+  font-size: 2em;
+  margin-left: 30px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1 }
+  to { opacity: 0 }
+}
+
+#test {
+  margin-bottom: 50px;
+}
+
+input[type=radio] {
+  display: none;
+}

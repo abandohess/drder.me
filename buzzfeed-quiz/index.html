@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Connect4 AI</title>
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href=style.css>
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
+    <script src="semantic/dist/semantic.min.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+
+  <div id="banner">
+    <span id="centerText">Can we guess your Greek affiliation with this short quiz?</span>
+  </div>
+  <div id="container">
+    <p class="question">What is your relationship with turkeys?</p>
+    <div class="quiz-row">
+      <label class="quiz-item" id="item1a">
+        <img class="check" id="check1a" src="img/check.png">
+        <div class="ui card">
+          <div class="image">
+            <img src="img/turkey.jpg">
+          </div>
+          <div class="content">
+            <p class="header">I eat it at Thanksgiving</p>
+          </div>
+        </div>
+        <input type="radio" name="turkey" value="puppy"/>
+      </label>
+      <label class="quiz-item" id="item1b">
+        <img class="check" id="check1b" src="img/check.png">
+        <div class="ui card">
+          <div class="image">
+            <img src="img/question.jpg">
+          </div>
+          <div class="content">
+            <p class="header">I don't know</p>
+          </div>
+        </div>
+        <input type="radio" name="turkey" value="puppy"/>
+      </label>
+      <label class="quiz-item" id="item1c">
+        <img class="check" id="check1c" src="img/check.png">
+        <div class="ui card">
+          <div class="image">
+            <img src="img/yikes.jpg">
+          </div>
+          <div class="content">
+            <p class="header">I'd rather not say</p>
+          </div>
+        </div>
+        <input type="radio" name="turkey" value="puppy"/>
+      </label>
+    </div>
+
+    <p class="question">Does your name have a numeral suffix?</p>
+    <div class="quiz-row">
+      <label class="quiz-item" id="item2a">
+        <img class="check" id="check2a" src="img/check.png">
+        <div class="ui card">
+          <div class="image">
+            <img src="img/numeral.png">
+          </div>
+          <div class="content">
+            <p class="header">Yes</p>
+          </div>
+        </div>
+        <input type="radio" name="numeral" value="puppy"/>
+      </label>
+      <label class="quiz-item" id="item2b">
+        <img class="check" id="check2b" src="img/check.png">
+        <div class="ui card">
+          <div class="image">
+            <img src="img/nope.png">
+          </div>
+          <div class="content">
+            <p class="header">No</p>
+          </div>
+        </div>
+        <input type="radio" name="numeral" value="puppy"/>
+      </label>
+      <label class="quiz-item" id="item2c">
+        <img class="check" id="check2c" src="img/check.png">
+        <div class="ui card">
+          <div class="image">
+            <img src="img/click.png">
+          </div>
+          <div class="content">
+            <p class="header">Having trouble reading?</p>
+          </div>
+        </div>
+        <input type="radio" name="numeral" value="puppy"/>
+      </label>
+    </div>
+
+    <p class="question">When was the last time you shopped at J. Crew?</p>
+
+    <div class="quiz-row">
+      <label class="quiz-item" id="item3a">
+        <img class="check" id="check3a" src="img/check.png">
+        <div class="ui card">
+          <div class="image">
+            <img src="img/jcrew.jpg">
+          </div>
+          <div class="content">
+            <p class="header">Less than a week ago</p>
+          </div>
+        </div>
+        <input type="radio" name="jcrew" value="puppy"/>
+      </label>
+      <label class="quiz-item" id="item3b">
+        <img class="check" id="check3b" src="img/check.png">
+        <div class="ui card">
+          <div class="image">
+            <img src="img/shirt.jpg">
+          </div>
+          <div class="content">
+            <p class="header">Less than a month ago</p>
+          </div>
+        </div>
+        <input type="radio" name="jcrew" value="puppy"/>
+      </label>
+      <label class="quiz-item" id="item3c">
+        <img class="check" id="check3c" src="img/check.png">
+        <div class="ui card">
+          <div class="image">
+            <img src="img/cancel.png">
+          </div>
+          <div class="content">
+            <p class="header">I have never shopped at J. Crew</p>
+          </div>
+        </div>
+        <input type="radio" name="jcrew" value="puppy"/>
+      </label>
+    </div>
+
+    <button class="ui button yellow create_btn" type="button" id="test">Get Results</button>
+  </div>
+
+  <div class="ui modal test">
+    <i class="close icon"></i>
+    <div class="image content">
+      <div class="ui medium image">
+        <img id="modal-image">
+      </div>
+      <div class="modal-body">
+        <div id="modal-text"></div>
+      </div>
+    </div>
+  </div>
+
+  </body>
+
+</html>
